@@ -1,6 +1,4 @@
 PODS:
-  - add_2_calendar (0.0.1):
-    - Flutter
   - BoringSSL (10.0.6):
     - BoringSSL/Implementation (= 10.0.6)
     - BoringSSL/Interface (= 10.0.6)
@@ -149,7 +147,6 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
-  - add_2_calendar (from `.symlinks/plugins/add_2_calendar/ios`)
   - clipboard_manager (from `.symlinks/plugins/clipboard_manager/ios`)
   - cloud_firestore (from `.symlinks/plugins/cloud_firestore/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
@@ -185,8 +182,6 @@ SPEC REPOS:
     - Protobuf
 
 EXTERNAL SOURCES:
-  add_2_calendar:
-    :path: ".symlinks/plugins/add_2_calendar/ios"
   clipboard_manager:
     :path: ".symlinks/plugins/clipboard_manager/ios"
   cloud_firestore:
@@ -209,7 +204,6 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/shared_preferences/ios"
 
 SPEC CHECKSUMS:
-  add_2_calendar: da1cb32f7bda3252f01c732f49e6ec72983b50fa
   BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
   clipboard_manager: a6f1e56e1abb10def5bd6a83e86183086bdcfd01
   cloud_firestore: a2d49d9c7219fce31033eb1a2ee953d7733c91d6

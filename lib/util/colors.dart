@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 /// COLORS FILE
 /// It contains app colors to used them all around the app
+/// -- Dark Theme --
 const primaryColor = const Color(0xFF151515);
 const accentColor = const Color(0xFFFFBC02D);
 const backgroundColor = const Color(0xFF212121);
@@ -17,3 +18,4 @@ const nullIcon = const Color(0xFF607D8B);
 
 const highlightColor = const Color(0xFF424242);
 const dividerColor = const Color(0xFF616161);
+

@@ -4,6 +4,8 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:native_widgets/native_widgets.dart';
 import 'package:scoped_model/scoped_model.dart';
+import 'package:dynamic_theme/dynamic_theme.dart';
+import 'package:dynamic_theme/theme_switcher_widgets.dart';
 
 import '../models/nasa/nasa_image.dart';
 import '../models/planets/celestial_body.dart';
@@ -22,6 +24,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
+        backgroundColor: Theme.of(context).canvasColor,
         actions: <Widget>[
           IconButton(
             icon: const Icon(Icons.info_outline),
@@ -33,7 +36,11 @@ class HomeScreen extends StatelessWidget {
         ],
         title: Text(
           FlutterI18n.translate(context, 'app.title'),
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: Theme.of(context).textTheme.title.copyWith(
+              fontWeight: FontWeight.bold,
+              color: Theme.of(context).brightness == Brightness.dark
+                  ? Colors.white
+                  : Colors.black),
         ),
         centerTitle: true,
       ),
@@ -113,6 +120,7 @@ class _ContentPageState extends State<ContentPage> {
                 ),
               ),
         ),
+
         // Padding(
         //   padding: const EdgeInsets.all(16.0),
         //   child: Row(
